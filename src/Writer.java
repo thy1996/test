@@ -24,6 +24,11 @@ class Writer extends Users {
     void setPosition(String rep){ Position=rep;}
     void setEmail(String rep){ Email=rep;}
     void setWechat(String rep){ Wechat=rep;}
+
+    String tostring (){return super.tostring()+"\\"+Date+"\\"+Adress+"\\"+Referees+"\\"+Num
+            +"\\"+Title+"\\"+Position+"\\"+Email +"\\"+Wechat+"/n";}
+    String tostring (String ss){return ss+"\\"+super.tostring()+"\\"+Date+"\\"+Adress+"\\"+Referees+"\\"+Num
+            +"\\"+Title+"\\"+Position+"\\"+Email +"\\"+Wechat+"/n";}
     void Billquery(){}//提案查询
     void Proposalpreparation(){}//提案编制
     void Standardquery(){}
